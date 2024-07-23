@@ -1,0 +1,11 @@
+.horizontal-scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.scrollable-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
