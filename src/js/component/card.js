@@ -2,17 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import "../card.css"; // Adjusted the path to point to the correct location
 
 const Card = ({ item, type, onFavoriteClick }) => {
     const itemId = item.url.match(/\/([0-9]+)\/$/)[1];
 
     return (
-        <div className="card" style={{ width: "400px", margin: "15px" }}>
+        <div className="card m-2" style={{ width: "18rem" }}>
             <img
                 src={`https://starwars-visualguide.com/assets/img/${type}/${itemId}.jpg`}
                 className="card-img-top"
                 alt={item.name}
-                style={{ height: "200px", width: "400px", objectFit: "cover" }}
+                style={{ height: "200px", objectFit: "cover" }}
             />
             <div className="card-body">
                 <h5 className="card-title">{item.name}</h5>

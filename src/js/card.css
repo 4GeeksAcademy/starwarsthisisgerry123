@@ -1,0 +1,13 @@
+/* Styles for card components */
+.horizontal-scrollable {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.horizontal-scrollable .card {
+    flex: 0 0 auto; /* prevents cards from shrinking */
+    margin: 5px; /* adds space between cards */
+    width: 18rem;
+}
